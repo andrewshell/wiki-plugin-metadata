@@ -1,0 +1,37 @@
+{
+  "title": "About Metadata Plugin",
+  "story": [
+  {
+    "type": "paragraph",
+    "id": "≤cæ535‚d5‚Á506„5",
+    "text": "Here we describe the purpose of the plugin and include a sample."
+  },
+  {
+    "type": "metadata",
+    "id": "Í‚e‚‰beÈ‚4Âæ9≤6Í",
+    "text": "This is text in the new plugin. You can *double-click* to edit it too."
+  }
+],
+  "journal": [
+  {
+    "type": "create",
+    "item": {
+      "title": "About Metadata Plugin",
+      "story": [
+  {
+    "type": "paragraph",
+    "id": "≤cæ535‚d5‚Á506„5",
+    "text": "Here we describe the purpose of the plugin and include a sample."
+  },
+  {
+    "type": "metadata",
+    "id": "Í‚e‚‰beÈ‚4Âæ9≤6Í",
+    "text": "This is text in the new plugin. You can *double-click* to edit it too."
+  }
+]
+    },
+    "date": 1640713518000,
+    "certificate": "from mkplugin.sh"
+  }
+]
+}
