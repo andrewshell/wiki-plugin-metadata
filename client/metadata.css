@@ -1,0 +1,24 @@
+.metadata {
+    background-color: #eee;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+.metadata dl {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.metadata dt {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.metadata dd {
+    margin: 0;
+    padding: 0;
+}
