@@ -1,37 +1,159 @@
 {
   "title": "About Metadata Plugin",
   "story": [
-  {
-    "type": "paragraph",
-    "id": "≤cæ535‚d5‚Á506„5",
-    "text": "Here we describe the purpose of the plugin and include a sample."
-  },
-  {
-    "type": "metadata",
-    "id": "Í‚e‚‰beÈ‚4Âæ9≤6Í",
-    "text": "This is text in the new plugin. You can *double-click* to edit it too."
-  }
-],
-  "journal": [
-  {
-    "type": "create",
-    "item": {
-      "title": "About Metadata Plugin",
-      "story": [
-  {
-    "type": "paragraph",
-    "id": "≤cæ535‚d5‚Á506„5",
-    "text": "Here we describe the purpose of the plugin and include a sample."
-  },
-  {
-    "type": "metadata",
-    "id": "Í‚e‚‰beÈ‚4Âæ9≤6Í",
-    "text": "This is text in the new plugin. You can *double-click* to edit it too."
-  }
-]
+    {
+      "type": "paragraph",
+      "id": "32ceb15efd732816",
+      "text": "The Metadata plugin is designed to be a way to store arbitrary machine-readable data on a page."
     },
-    "date": 1640713518000,
-    "certificate": "from mkplugin.sh"
-  }
-]
+    {
+      "type": "metadata",
+      "id": "a0ec009af3098725",
+      "text": "{\n\"vocab\": \"https://schema.org/\",\n\"typeof\": \"TechArticle\"\n}",
+      "metadata": {
+        "vocab": "https://schema.org/",
+        "typeof": "TechArticle"
+      }
+    },
+    {
+      "type": "paragraph",
+      "id": "934e6bf0c7cbe106",
+      "text": "The above metadata paragraph is saved as the following:"
+    },
+    {
+      "type": "code",
+      "id": "77e23f99353d3804",
+      "text": "{\n  \"type\": \"metadata\",\n  \"id\": \"a0ec009af3098725\",\n  \"text\": \"{\\n\\\"vocab\\\": \\\"https://schema.org/\\\",\\n\\\"typeof\\\": \\\"TechArticle\\\"\\n}\",\n  \"metadata\": {\n    \"vocab\": \"https://schema.org/\",\n    \"typeof\": \"TechArticle\"\n  }\n}"
+    },
+    {
+      "type": "paragraph",
+      "id": "9da494d9c04e777f",
+      "text": "Notice the new metadata key with the defined json."
+    }
+  ],
+  "journal": [
+    {
+      "type": "create",
+      "item": {
+        "title": "About Metadata Plugin",
+        "story": []
+      },
+      "date": 1640713518000,
+      "certificate": "from mkplugin.sh"
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "32ceb15efd732816"
+      },
+      "id": "32ceb15efd732816",
+      "type": "add",
+      "date": 1640718715058
+    },
+    {
+      "type": "edit",
+      "id": "32ceb15efd732816",
+      "item": {
+        "type": "paragraph",
+        "id": "32ceb15efd732816",
+        "text": "The Metadata plugin is designed to be a way to store arbitrary machine-readable data on a page."
+      },
+      "date": 1640718717146
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "a0ec009af3098725"
+      },
+      "id": "a0ec009af3098725",
+      "type": "add",
+      "after": "32ceb15efd732816",
+      "date": 1640718877620
+    },
+    {
+      "type": "edit",
+      "id": "a0ec009af3098725",
+      "item": {
+        "type": "metadata",
+        "id": "a0ec009af3098725",
+        "text": "{\n\"vocab\": \"https://schema.org/\",\n\"typeof\": \"TechArticle\"\n}",
+        "metadata": {
+          "vocab": "https://schema.org/",
+          "typeof": "TechArticle"
+        }
+      },
+      "date": 1640719013791
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "77e23f99353d3804"
+      },
+      "id": "77e23f99353d3804",
+      "type": "add",
+      "after": "a0ec009af3098725",
+      "date": 1640719093230
+    },
+    {
+      "type": "edit",
+      "id": "77e23f99353d3804",
+      "item": {
+        "type": "code",
+        "id": "77e23f99353d3804",
+        "text": "{\n  \"type\": \"metadata\",\n  \"id\": \"a0ec009af3098725\",\n  \"text\": \"{\\n\\\"vocab\\\": \\\"https://schema.org/\\\",\\n\\\"typeof\\\": \\\"TechArticle\\\"\\n}\",\n  \"metadata\": {\n    \"vocab\": \"https://schema.org/\",\n    \"typeof\": \"TechArticle\"\n  }\n}"
+      },
+      "date": 1640719124733
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "934e6bf0c7cbe106"
+      },
+      "id": "934e6bf0c7cbe106",
+      "type": "add",
+      "after": "77e23f99353d3804",
+      "date": 1640719152311
+    },
+    {
+      "id": "934e6bf0c7cbe106",
+      "type": "move",
+      "order": [
+        "32ceb15efd732816",
+        "a0ec009af3098725",
+        "934e6bf0c7cbe106",
+        "77e23f99353d3804"
+      ],
+      "date": 1640719153888
+    },
+    {
+      "type": "edit",
+      "id": "934e6bf0c7cbe106",
+      "item": {
+        "type": "paragraph",
+        "id": "934e6bf0c7cbe106",
+        "text": "The above metadata paragraph is saved as the following:"
+      },
+      "date": 1640719174866
+    },
+    {
+      "item": {
+        "type": "factory",
+        "id": "9da494d9c04e777f"
+      },
+      "id": "9da494d9c04e777f",
+      "type": "add",
+      "after": "77e23f99353d3804",
+      "date": 1640719176368
+    },
+    {
+      "type": "edit",
+      "id": "9da494d9c04e777f",
+      "item": {
+        "type": "paragraph",
+        "id": "9da494d9c04e777f",
+        "text": "Notice the new metadata key with the defined json."
+      },
+      "date": 1640719202616
+    }
+  ]
 }
